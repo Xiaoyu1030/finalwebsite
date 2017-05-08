@@ -1,0 +1,445 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My Beauty</title>
+     <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <ul class="nav navbar-nav">
+            <li><img src="img/logo1.jpg" height="70" width="100" ></li>
+            <li><img src="img/logo.jpg" height="80" width="100"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Nutrition</a></li>
+              <li><a href="calory-counter.html">Calory Counter</a></li>
+            <li><a href="workout.html">Workout</a></li>
+            <li><a href="BMI.html">Health Index</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+        </div>
+
+        <!--hover-->
+        <form class="navbar-right">
+            <div class="dropdown">
+                <button type="button" data-toggle="dropdown" class="btn btn-info navbar-btn dropdown-toggle">Account
+        <span class="caret"></span>
+      </button>
+                <ul class="dropdown-menu">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </form>
+
+    </nav>
+    <div class="bodypart1">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel"  data-interval="3000" data-wrap=“true”>
+
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/head1.jpg" alt="head1">
+
+        </div>
+
+        <div class="item">
+          <img src="img/head2.jpg"  alt="head2">
+
+        </div>
+
+        <div class="item">
+          <img src="img/head3.jpg"  alt="head3">
+
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <br>
+    <br>
+    <form action="/food/search" method="get" autocomplete="off" name="search_form" id="search_form" class="widget-form" style="padding-left:500px">
+        <label for="keyword" class="placeholder" style=" font-size:16px;><span class="iconfont iconfont-search2" "></span>Food Calory</label>
+        <input id="keyword" name="keyword" class="textbox input-large" type="text" maxlength="60" >
+        <button type="submit" class="bh-btn btn-submit">Search</button>
+        <div class="suggest-wrap">
+          <ul id = 'suggest_output' class = 'suggest'><span id='be_replace'></span></ul>
+        </div>
+      </form>
+
+
+<div class="part3">
+    <div class="container-fluid">
+    <div class="row content1">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-7">
+      <h3>Food Category/otatoes&Beans&Grains/Rice</h3>
+      <h4>Nutrition of Rice</h4>
+
+      <div class="food-pic pull-left">
+       <a href='#' class="lightbox"><img src='img/rice2.jpg' alt="rice" /></a>
+     </div>
+     <br><br>
+
+     <ul class="basic-info ">
+
+       <li><b>Calory：</b><span id="food-calory"><span class="stress red1">116</span>&nbsp;Calory（100g）</span></li>
+
+        <li><b>Category：</b><strong><a href="#">Potatoes&Beans&Grains</a></strong></li>
+       </ul>
+
+       <br>
+       <table class="table3">
+							<thead>
+							<tr>
+								<th style="border:1px solid pink">
+         <h2>Popular Types of Rice</h2>
+       </th>
+       <th width="80" class="nutrient" >Net Carbs(g)</th>
+
+									<th width="60" class="nutrient" >Sugar(g)</th>
+
+									<th width="60" class="nutrient" >Fiber(g)</th>
+
+									<th width="85" class="nutrient" >Total Carbs(g)</th>
+							</tr>
+							</thead>
+              <tbody>
+
+							<tr>
+								<td class="subtitle" colspan="5">
+									<h3>White Rice <span class="smallText greyText">(1 cup cooked)</span></h3>
+								</td>
+							</tr>
+
+							<tr class="food" >
+								<td><a title="Instant White Rice" class="prominent" href="/calories-nutrition/generic/rice-white-cooked-instant?portionid=18353&portionamount=1.000"><img border="0" src="https://d1nept1345ks2.cloudfront.net/static/images/icons/myfs_box_blue.gif" border="0" class="bull"/> Instant White Rice</a></td>
+
+									<td class="nutrient">40.04</td>
+
+									<td class="nutrient">-</td>
+
+									<td class="nutrient">1.0</td>
+
+									<td class="nutrient">41.04</td>
+
+							</tr>
+
+							<tr class="food">
+								<td><a href="#"> Regular White Rice</a></td>
+
+									<td class="nutrient">43.48</td>
+
+									<td class="nutrient">0.08</td>
+
+									<td class="nutrient">0.6</td>
+
+									<td class="nutrient">44.08</td>
+
+							</tr>
+
+							<tr class="food" >
+								<td><a href="#"> Short-Grain White Rice</a></td>
+
+									<td class="nutrient">53.44</td>
+
+									<td class="nutrient">-</td>
+
+									<td class="nutrient">-</td>
+
+									<td class="nutrient">53.44</td>
+
+							</tr>
+
+							<tr class="food" >
+								<td><a href="#"> Medium-Grain White Rice</a></td>
+
+									<td class="nutrient">52.58</td>
+
+									<td class="nutrient">-</td>
+
+									<td class="nutrient">0.6</td>
+
+									<td class="nutrient">53.18</td>
+
+							</tr>
+
+							<tr class="food last" >
+								<td><a href="#">Long-Grain White Rice</a></td>
+
+									<td class="nutrient">43.91</td>
+
+									<td class="nutrient">0.08</td>
+
+									<td class="nutrient">0.6</td>
+
+									<td  class=" nutrient">44.51</td>
+
+							</tr>
+
+							<tr>
+								<td class="subtitle" colspan="5">
+									<h3>Brown Rice <span class="smallText greyText">(1 cup cooked)</span></h3>
+								</td>
+							</tr>
+
+							<tr class="food" >
+								<td><a href=""></a></td>
+
+									<td class="nutrient">44.49</td>
+
+									<td class="nutrient">0.74</td>
+
+									<td class="nutrient">3.8</td>
+
+									<td class="nutrient">48.29</td>
+
+							</tr>
+
+							<tr class="food" >
+								<td><a href="#"> Regular Brown Rice</a></td>
+
+									<td class="nutrient">40.92</td>
+
+									<td class="nutrient">0.68</td>
+
+									<td class="nutrient">3.5</td>
+
+									<td class="nutrient">44.42</td>
+
+							</tr>
+
+							<tr class="food" >
+								<td><a href="＃"> Medium-Grain Brown Rice</a></td>
+
+									<td class="nutrient">42.34</td>
+
+									<td class="nutrient">-</td>
+
+									<td class="nutrient">3.5</td>
+
+									<td  class=" nutrient">45.84</td>
+
+							</tr>
+
+							<tr class="food last" >
+								<td><a  href="＃"> Long-Grain Brown Rice</a></td>
+
+									<td class="nutrient">41.27</td>
+
+									<td class="nutrient">0.68</td>
+
+									<td class="nutrient">3.5</td>
+
+									<td class=" nutrient">44.77</td>
+
+							</tr>
+
+							<tr>
+								<td class="subtitle" colspan="5">
+									<h3>Fried Rice <span class="smallText greyText">(1 cup cooked)</span></h3>
+								</td>
+							</tr>
+
+							<tr class="food" >
+								<td><a href="＃"> Regular Fried Rice</a></td>
+
+									<td class="nutrient">40.30</td>
+
+									<td class="nutrient">1.50</td>
+
+									<td class="nutrient">1.4</td>
+
+									<td class=" nutrient">41.70</td>
+
+							</tr>
+
+							<tr class="food">
+								<td><a  href="＃"> Fried Rice with Beef</a></td>
+
+									<td class="nutrient">40.54</td>
+
+									<td class="nutrient">1.41</td>
+
+									<td class="nutrient">1.4</td>
+
+									<td  class=" nutrient">41.94</td>
+
+							</tr>
+
+							<tr class="food" >
+								<td><a href="＃"> Fried Rice with Chicken</a></td>
+
+									<td class="nutrient">40.42</td>
+
+									<td class="nutrient">1.39</td>
+
+									<td class="nutrient">1.4</td>
+
+									<td class="nutrient">41.82</td>
+
+							</tr>
+
+							<tr class="food" >
+								<td><a href="＃"> Fried Rice with Pork</a></td>
+
+									<td class="nutrient">40.54</td>
+
+									<td class="nutrient">1.41</td>
+
+									<td class="nutrient">1.4</td>
+
+									<td  class=" nutrient">41.94</td>
+
+							</tr>
+
+							<tr class="food" >
+								<td><a href="＃">Fried Rice with Shrimp</a></td>
+
+									<td class="nutrient">40.48</td>
+
+									<td class="nutrient">1.50</td>
+
+									<td class="nutrient">1.4</td>
+
+									<td class=" nutrient">41.88</td>
+
+							</tr>
+
+							<tr class="food">
+								<td><a href="＃"> Fried Rice without Meat</a></td>
+
+									<td class="nutrient">33.11</td>
+
+									<td class="nutrient">1.86</td>
+
+									<td class="nutrient">1.7</td>
+
+									<td class="nutrient">34.81</td>
+
+							</tr>
+
+							<tr class="food last" >
+								<td><a href="＃"> Chinese Fried Rice</a></td>
+
+									<td class="nutrient">36.32</td>
+
+									<td class="nutrient">1.35</td>
+
+									<td class="nutrient">1.2</td>
+
+									<td class=" nutrient">37.52</td>
+							</tr>
+						</tbody></table>
+
+              <h4>Foods related to Rice</h4>
+                    <ul class="list">
+                      <li style="display:inline;">
+                        <a href="#">
+                            <img src='img/rice3.jpg'width="100" height="100" alt="rice" />
+                          <span>Rice</span>
+                        </a>
+                      </li>
+                      <li style="display:inline">
+                        <a href="#" >
+                            <img src='img/za.jpg' width="100" height="100"alt="za" />
+                          <span>Wild Rice</span>
+                        </a>
+                      </li>
+                      <li style="display:inline">
+                        <a href="#" target="_blank">
+                            <img src='img/pancake.jpg' width="100" height="100"alt="pancake" />
+                          <span>Pancake</span>
+                        </a>
+                      </li>
+                      <li style="display:inline">
+                        <a href="#" >
+                            <img src='img/noodles.jpg' width="100" height="100"alt="noodle" />
+                          <span>Noodles</span>
+                        </a>
+                      </li>
+                    </ul>
+</div>
+<div class="col-sm-1 "></div>
+
+<div class="col-sm-3 pull-left" style="border: 1px solid pink;margin-left:20px;margin-top:20px ">
+  <br><br>
+    <a href="#" style="background-color:#CCCCCC; color:black; font-size:16px;font-weight:bold">Body-Building Group</a>
+     <a href="" style="background-color:#FF0000; color:black;font-size:16px;font-weight:bold"class="active">General Group</a>
+        <p style="color: pink; ">__________________________________________</p>
+
+<br>
+
+    <h3>Calory Counter</h3>
+<div class="tools-bar">
+        <p class="form-inline"><label>Name：</label>Rice</p>
+        <p class="form-inline"><label for="eat_time">Type </label><select id="eat_time" name="eat_time"><option value='1'>breakfast</option><option value='6'>brunch</option><option value='2'>lunch</option><option value='7'>afternoon tea</option><option value='3'>dinner</option><option value='8'>night snack</option></select></p>
+        <p class="form-inline"><label for="food_num">Account</label><input class="form-text" id="food_num" name="food_num" type="text" value="100" /></p>
+        <p class="form-inline">
+          <label for="food_unit">Unit:</label>
+
+            <select id="food_unit" name="food_unit"><option value='0'>gram</option><option value='207'>tael (145g)</option><option value='233'>spoonful(40g)</option><option value='134'>box(280g)</option><option value='980'>bowl(200g)</option><option value='132'>small bowl(150g)</option></select>
+        </p>
+        <p class="form-inline text-center" ><input class="submit" name="commit" type="submit" value="add" style="background-color:pink"/></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br><br><br><br><br>
+          <footer>
+            <div class="container">
+                   <div class="row">
+                     <div class="col-md-2">
+                       <div class="tel">
+                       <label for="tel">Tel:</label>
+             666-110-0880
+           </div>
+         </div>
+         <div class="col-md-3">
+           <div class="tel">
+           <label for="email">Email:</label>
+ olivia.smilexxy@gmail.com
+ </div>
+         </div>
+         <div class="col-md-3">
+           <div class="tel">
+           <label for="email">Address:</label>
+1230 Amsterdam Ave
+ </div>
+         </div>
+           <div class="col-md-4"></div>
+       </div>
+</footer>
+
+
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js>" </script>
+    </body>
+    </html >

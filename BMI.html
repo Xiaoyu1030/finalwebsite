@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My Beauty</title>
+     <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <ul class="nav navbar-nav">
+            <li><img src="img/logo1.jpg" height="70" width="100" ></li>
+            <li><img src="img/logo.jpg" height="80" width="100"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Nutrition</a></li>
+              <li><a href="calory-counter.html">Calory Counter</a></li>
+            <li><a href="workout.html">Workout</a></li>
+            <li><a href="BMI.html">Health Index</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+        </div>
+
+        <!--hover-->
+        <form class="navbar-right">
+            <div class="dropdown">
+                <button type="button" data-toggle="dropdown" class="btn btn-info navbar-btn dropdown-toggle">Account
+        <span class="caret"></span>
+      </button>
+                <ul class="dropdown-menu">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </form>
+
+    </nav>
+    <div class="bodypart1">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel"  data-interval="3000" data-wrap=“true”>
+
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/head1.jpg" alt="head1">
+
+        </div>
+
+        <div class="item">
+          <img src="img/head2.jpg"  alt="head2">
+
+        </div>
+
+        <div class="item">
+          <img src="img/head3.jpg"  alt="head3">
+
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <br>
+    <br>
+
+
+<div class="part3">
+    <div class="container-fluid">
+    <div class="row content1">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-7">
+
+        <div class="BMI">
+          <div class="discription"  style="border: 1px solid pink; font-size:14px; margin-right:40px;text-align:center">
+            <p style="background-color:pink; font-size:15px; font-weight:bold; color:white">The Body Mass Index (BMI)</p>
+          <p>The body mass index (BMI) is an attempt to quantify the amount of tissue mass (muscle, fat, and bone) in an individual, and then categorize that person as underweight, normal weight, overweight, or obese based on that value.</p>
+          </div>
+        			  <div style="margin:0;padding:0;display:inline"></div>
+        				<h5 >Please input your height and weight</h5>
+        			  	<p>
+        			  	  Height<input class="text" id="height" name="height" size="6" type="text" /> inches
+        				  Weight<input class="text" id="weight" name="weight" size="6" type="text" /> pounds
+        				  <input class="button" name="commit" type="submit" value="calculate" />
+        				</p>
+        	</div>
+        		    <table cellpadding="0" cellspacing="0"  class="table2">
+        			    <tr class="thead">
+        			      <th colspan="4" style=" font-size:16px; text-align: center; font-weight:bold; background-color:#FFB6C1;color:white">BMI in Adults</th>
+        				</tr>
+        		        <tr>
+        		          <td width="25%"><b>Underweight BMI</b></td>
+        		          <td width="25%"><b>Normal Range BMI</b></td>
+        		          <td width="25%"><b>Overweight BMI</b></td>
+        				  <td width="25%"><b>Obese BMI</b></td>
+        				</tr>
+        				<tr>
+        				  <td>BMI<18.5</td>
+        				  <td>18.5≤BMI<24</td>
+        				  <td>24≤BMI<28</td>
+        				  <td>28≤BMI</td>
+        				</tr>
+        			</table>
+        			<p class="stress">Resource:<br>
+        			<a href:"https://en.wikipedia.org/wiki/Body_mass_index#Consequences_of_elevated_level_in_adults">https://en.wikipedia.org/wiki/Body_mass_index#Consequences_of_elevated_level_in_adults </a>
+            </p>
+
+        			<table cellpadding="0" cellspacing="0"  class="table2">
+        			    <tr class="thead">
+        				  <th colspan="4" style=" font-size:16px; text-align: center; font-weight:bold; background-color:#FFB6C1;color:white">BMI in Children (aged 7 to 20)</th>
+        			    </tr>
+        			    <tr>
+        				  <td width="15%" class="center"><b>Gender</b></td>
+        				  <td width="15%"><b>Age</b></td>
+        				  <td width="35%"><b>Overweight</b></td>
+        				  <td width="35%"><b>Obese</b></td>
+        			    </tr>
+        			    <tr>
+        				  <td rowspan="11" class="center"><b>Female</b></td>
+        				  <td>7</td>
+        				  <td>18.9&gt;BMI&gt;=17.2</td>
+        				  <td>BMI&gt;=18.9</td>
+        			    </tr>
+        			    <tr>
+        				  <td>8</td>
+        				  <td>19.9&gt;BMI&gt;=18.1</td>
+        				  <td>BMI&gt;=19.9</td>
+        			    </tr>
+        			    <tr>
+        				  <td>9</td>
+        				  <td>21.0&gt;BMI&gt;=19.0</td>
+        				  <td>BMI&gt;=21.0</td>
+        			    </tr>
+        			    <tr>
+        				  <td>10</td>
+        				  <td>22.1&gt;BMI&gt;=20.0</td>
+        				  <td>BMI&gt;=22.1</td>
+        			    </tr>
+        			    <tr>
+        				  <td>11</td>
+        				  <td>23.3&gt;BMI&gt;=21.1</td>
+        				  <td>BMI&gt;=23.3</td>
+        			    </tr>
+        			    <tr>
+        				  <td>12</td>
+        				  <td>24.5&gt;BMI&gt;=21.9</td>
+        				  <td>BMI&gt;=24.5</td>
+        			    </tr>
+        			    <tr>
+        				  <td>13</td>
+        				  <td>25.6&gt;BMI&gt;=22.6</td>
+        				  <td>BMI&gt;=25.6</td>
+        			    </tr>
+        			    <tr>
+        				  <td>14</td>
+        				  <td>26.3&gt;BMI&gt;=23.0</td>
+        				  <td>BMI&gt;=26.3</td>
+        			    </tr>
+        			    <tr>
+        				  <td>15</td>
+        				  <td>26.9&gt;BMI&gt;=23.4</td>
+        				  <td>BMI&gt;=26.9</td>
+        			    </tr>
+        			    <tr>
+        				  <td>16</td>
+        				  <td>27.4&gt;BMI&gt;=23.7</td>
+        				  <td>BMI&gt;=27.4</td>
+        			    </tr>
+        			    <tr>
+        				  <td>17</td>
+        				  <td>27.7&gt;BMI&gt;=23.8</td>
+        				  <td>BMI&gt;=27.7</td>
+        			    </tr>
+        			    <tr>
+        				  <td rowspan="11" class="center"><b>Male</b></td>
+        				  <td>7</td>
+        				  <td>19.2&gt;BMI&gt;=17.4</td>
+        				  <td>BMI&gt;=19.2</td>
+        			    </tr>
+        			    <tr>
+        				  <td>8</td>
+        				  <td>20.3&gt;BMI&gt;=18.1</td>
+        				  <td>BMI&gt;=20.3</td>
+        			    </tr>
+        			    <tr>
+        				  <td>9</td>
+        				  <td>21.4&gt;BMI&gt;=18.9</td>
+        			  	  <td>BMI&gt;=21.4</td>
+        			    </tr>
+        			    <tr>
+        				  <td>10</td>
+        				  <td>22.5&gt;BMI&gt;=19.6</td>
+        				  <td>BMI&gt;=22.5</td>
+        			    </tr>
+        			    <tr>
+        				  <td>11</td>
+        				  <td>23.6&gt;BMI&gt;=20.3</td>
+        				  <td>BMI&gt;=23.6</td>
+        			    </tr>
+        			    <tr>
+        				  <td>12</td>
+        				  <td>24.7&gt;BMI&gt;=21.0</td>
+        				  <td>BMI&gt;=24.7</td>
+        			    </tr>
+        			    <tr>
+        				  <td>13</td>
+        				  <td>25.7&gt;BMI&gt;=21.9</td>
+        				  <td>BMI&gt;=25.7</td>
+        			    </tr>
+        			    <tr>
+        				  <td>14</td>
+        				  <td>26.4&gt;BMI&gt;=22.6</td>
+        				  <td>BMI&gt;=26.4</td>
+        			    </tr>
+        			    <tr>
+        				  <td>15</td>
+        				  <td>26.9&gt;BMI&gt;=23.1</td>
+        				  <td>BMI&gt;=26.9</td>
+        			    </tr>
+        			    <tr>
+        				  <td>16</td>
+        				  <td>27.4&gt;BMI&gt;=23.5</td>
+        				  <td>BMI&gt;=27.4</td>
+        			    </tr>
+        			    <tr>
+        				  <td>17</td>
+        				  <td>27.8&gt;BMI&gt;=23.8</td>
+        				  <td>BMI&gt;=27.8</td>
+        			    </tr>
+        			</table>
+        			<p class="stress">Resource<br>
+        			<a href:"https://en.wikipedia.org/wiki/Body_mass_index#Consequences_of_elevated_level_in_adults"> https://en.wikipedia.org/wiki/Body_mass_index#Consequences_of_elevated_level_in_adults</a>
+            </p>
+              </div>
+
+<div class="col-sm-3"  style="border:1px solid pink;">
+	 <h5  style="background-color:pink;text-align:center;color:white"> Health Index&nbsp;</h5>
+	<div class="tool">
+	    <ul >
+	      <li ><a href="index2.html">Food Calory</a></li>
+	      <li ><a href="profile.html" class="nav2">Personal Profile</a></li>
+	      <li ><a href="calory-counter.html" class="nav5">Calory Counter</a></li>
+	      <li><a href="workout.html" class="nav6">Workout</a></li>
+	      <li><a href="calory-counter.html" class="nav4">Energy Expenditure</a></li>
+	      <li><a href="BMI.html" class="nav3">BMI</a></li>
+	    </ul>
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+<br><br>
+
+<br><br><br><br><br>
+<footer>
+  <div class="container">
+         <div class="row">
+           <div class="col-md-2">
+             <div class="tel">
+             <label for="tel">Tel:</label>
+   666-110-0880
+ </div>
+</div>
+<div class="col-md-3">
+ <div class="tel">
+ <label for="email">Email:</label>
+olivia.smilexxy@gmail.com
+</div>
+</div>
+<div class="col-md-3">
+ <div class="tel">
+ <label for="email">Address:</label>
+1230 Amsterdam Ave
+</div>
+</div>
+ <div class="col-md-4"></div>
+</div>
+</footer>
+
+
+
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js>" </script>
+</body>
+</html >

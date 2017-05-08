@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My Beauty</title>
+     <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <ul class="nav navbar-nav">
+            <li><img src="img/logo1.jpg" height="70" width="100" ></li>
+            <li><img src="img/logo.jpg" height="80" width="100"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.html">Nutrition</a></li>
+            <li><a href="calory-counter.html">Calory Counter</a></li>
+            <li><a href="workout.html">Workout</a></li>
+            <li><a href="BMI.html">Health Index</a></li>
+              <li><a href="community.html">Community</a></li>
+        </ul>
+        </div>
+
+        <!--hover-->
+        <form class="navbar-right">
+            <div class="dropdown">
+                <button type="button" data-toggle="dropdown" class="btn btn-info navbar-btn dropdown-toggle">Account
+        <span class="caret"></span>
+      </button>
+                <ul class="dropdown-menu">
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </form>
+
+    </nav>
+    <div class="bodypart1">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel"  data-interval="3000" data-wrap=“true”>
+
+      <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="img/head1.jpg" alt="head1">
+
+        </div>
+
+        <div class="item">
+          <img src="img/head2.jpg"  alt="head2">
+
+        </div>
+
+        <div class="item">
+          <img src="img/head3.jpg"  alt="head3">
+
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <br>
+    <br>
+    <form action="/food/search" method="get" autocomplete="off" name="search_form" id="search_form" class="widget-form" style="padding-left:500px">
+        <label for="keyword" class="placeholder" style=" font-size:16px;><span class="iconfont iconfont-search2" "></span>Food Calory</label>
+        <input id="keyword" name="keyword" class="textbox input-large" type="text" maxlength="60" >
+        <button type="submit" class="bh-btn btn-submit">Search</button>
+        <div class="suggest-wrap">
+          <ul id = 'suggest_output' class = 'suggest'><span id='be_replace'></span></ul>
+        </div>
+      </form>
+
+<div class="body2">
+    <div class="container-fluid text-left">
+    <div class="row content1">
+
+      <div class="col-sm-2">
+<h3>Food Category</h3>
+<ul class="group-list">
+  <li><a href="/food/group/1" class="g1">Potatoes&Beans&Grains</a></li>
+  <li><a href="/food/group/2" class="g2">Egg&Meat</a></li>
+  <li><a href="/food/group/3" class="g3">Dairy</a></li>
+  <li><a href="/food/group/4" class="g4">Vegetables&Mushrooms</a></li>
+  <li><a href="/food/group/5" class="g5">Nut&Peanut</a></li>
+  <li><a href="/food/group/6" class="g6">Beverage</a></li>
+  <li><a href="/food/group/7" class="g7">Oil</a></li>
+  <li><a href="/food/group/8" class="g8">Condiments</a></li>
+  <li><a href="/food/group/9" class="g9">Snack&Pastry</a></li>
+  <li><a href="/food/group/10" class="g10">Others</a></li>
+  <li><a href="/food/view_menu" class="g11">Restaurant</a>
+</ul>
+</div>
+
+  <div class="col-sm-7" style="border:2px outset pink; margin-left:10px">
+      <h3>Potatoes&Beans&Grains</h3>
+      <ul class="food-list" >
+        <li class="item clearfix" style="border-bottom:1px outset pink; ">
+        <div class="img-box pull-left">
+          <a href='#'><img src='img/rice.jpg' alt='Rice' height="60" width="60"/></a>
+        </div>
+        <div class="text-box pull-left">
+          <h4>
+            <a href="rice.html">Rice</a>
+          </h4>
+          <p>Calory：116 Calories (100g)</p>
+        </div>
+      </li>
+        <li class="item clearfix" style="border-bottom:1px outset pink; border-top:1px outset pink">
+        <div class="img-box pull-left">
+          <a href='#' ><img src='img/corn.jpg' alt='corn' height="60" width="60"/></a>
+        </div>
+        <div class="text-box pull-left">
+          <h4>
+            <a href="#" >Corn</a>
+          </h4>
+          <p>Calory：112 calories(100g)</p>
+        </div>
+      </li>
+        <li class="item clearfix" style="border-bottom:1px outset pink; border-top:1px outset pink">
+        <div class="img-box pull-left">
+          <a href='#' ><img src='img/mantou.jpg' alt='mantou' height="60" width="60"/></a>
+        </div>
+        <div class="text-box pull-left">
+          <h4>
+            <a href="#">steamed bun</a>
+          </h4>
+          <p>Calory：223 calories(100)</p>
+        </div>
+      </li>
+        <li class="item clearfix" style="border-bottom:1px outset pink; border-top:1px outset pink">
+        <div class="img-box pull-left">
+          <a href='#' ><img src='img/oat.jpg' alt='oatmeal' height="60" width="60"/></a>
+        </div>
+        <div class="text-box pull-left">
+          <h4>
+            <a href="#">oatmeal</a>
+          </h4>
+          <p>Calory：377 calories(100)</p>
+        </div>
+      </li>
+        <li class="item clearfix" style="border-bottom:1px outset pink; border-top:1px outset pink">
+        <div class="img-box pull-left">
+          <a href='#'><img src='img/bread.jpg' alt='bread' height="60" width="60"/></a>
+        </div>
+        <div class="text-box pull-left">
+          <h4>
+            <a href="#">Bread</a>
+          </h4>
+          <p>Calory：313 calories(100)</p>
+        </div>
+      </li>
+        <li class="item clearfix" style="border-bottom:1px outset pink; border-top:1px outset pink">
+        <div class="img-box pull-left">
+          <a href='#' ><img src='img/sweet.jpg' alt='sweet potato' height="60" width="60"/></a>
+        </div>
+        <div class="text-box pull-left">
+          <h4>
+            <a href="#" >Sweet Potatoes</a>
+          </h4>
+          <p>Calory：102 calories(100)</p>
+        </div>
+      </li>
+        <li class="item clearfix" style="border-bottom:1px outset pink; border-top:1px outset pink">
+        <div class="img-box pull-left">
+          <a href='#'><img src='img/congee.jpg' alt='congee' height="60" width="60" /></a>
+        </div>
+        <div class="text-box pull-left">
+          <h4>
+            <a href="#" >millet congee</a>
+          </h4>
+          <p>Calory：46 calories(100)</p>
+        </div>
+      </li>
+        <li class="item clearfix" style="border-top:1px outset pink">
+        <div class="img-box pull-left">
+          <a href='#' ><img src='img/potatoes.jpg' alt='potatoes'height="60" width="60" /></a>
+        </div>
+        <div class="text-box pull-left">
+          <h4>
+            <a href="#" >Potatoes&Yams</a>
+          </h4>
+          <p>Calory：77 calories(100)</p>
+        </div>
+      </li>
+    </ul>
+    <div class="digg" style="text-align:center; font-size:18px">
+                                        <span class="disabled">&lt; </span>
+                                         <a href="#?page=2">Previous Page</a>
+                                        <span class="current">1</span>
+                                        <a href="#?page=2">2</a>
+                                        <a href="#?page=3">3</a>
+                                        <a href="#?page=4">4</a>
+                                        <a href="http://www.divcss5.com/">5</a>
+                                        <a href="#?page=6">6</a>
+                                        <a href="#?page=7">7</a>
+                                        ...
+                                        <a href="#?page=199">199</a>
+                                        <a href="#?page=200">200    Next Page</a>
+                                        <a href="#?page=2">
+                                        &gt; </a></div>
+
+      </div>
+
+      <div class="col-sm-2 pull-left" style="margin-left:20px ">
+        <iframe width="200" height="200" src="https://www.youtube.com/embed/F6ehyV7kqv8" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-2 pull-left" style="margin-left:20px ">
+      <iframe width="200" height="200" src="https://www.youtube.com/embed/6_tgyVM_eOY" frameborder="0" allowfullscreen></iframe>
+</div>
+      </div>
+      </div>
+      </div>
+      <br><br><br><br><br>
+
+          <footer>
+            <div class="container">
+                   <div class="row">
+                     <div class="col-md-2">
+                       <div class="tel">
+                       <label for="tel">Tel:</label>
+             666-110-0880
+           </div>
+         </div>
+         <div class="col-md-3">
+           <div class="tel">
+           <label for="email">Email:</label>
+ olivia.smilexxy@gmail.com
+ </div>
+         </div>
+         <div class="col-md-3">
+           <div class="tel">
+           <label for="email">Address:</label>
+1230 Amsterdam Ave
+ </div>
+         </div>
+           <div class="col-md-4"></div>
+       </div>
+</footer>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js>" </script>
+    </body>
+    </html >
